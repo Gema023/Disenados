@@ -7,38 +7,44 @@
 
     <title>Diseñados</title>
 
-    <link rel="shortcut icon" href="img/favicon.svg">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-    
-    <script src="./js/phaser.3.11.min.js"></script>
-    <script type="text/javascript" src="./js/general.js"></script>
-    <script type="text/javascript" src="./js/elemento.juego.js"></script>
-    <script type="text/javascript" src="./js/pantalla.preguntas.js"></script>
-    <script type="text/javascript" src="./js/pantalla.ruleta.js"></script>
-    <script type="text/javascript" src="./js/puntuador.js"></script>
-    <script type="text/javascript" src="./js/pantalla.respuestas.js"></script>
-    <script type="text/javascript" src="./js/display.pregunta.js"></script>
-    <script type="text/javascript" src="./js/ruleta.js"></script>
-    <script type="text/javascript" src="./js/boton.js"></script>
-    <script type="text/javascript" src="./js/listado.preguntas.js"></script>
-    <script type="text/javascript" src="./js/principal.js"></script>
+    <link rel="shortcut icon" href="./assets/imagen/favicon.svg" type="image/x-icon">
+    <link href="app/style.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         body {
             margin: 0;
-            background-image: url(./assets/imagen/fondo_0.svg);
+            background-image: url(./assets/imagen/intro_fondo.svg);
         }
-
         canvas {
-            display : block;   
-            margin : auto;
+            display: block;
+            margin: auto;
             height: 100vh;
+        }
+        .img_logo {
+	        display: flex;
+    	    flex-direction: column;
+    	    align-items: center;
+    	    padding: 6rem;
+        }
+        .botones {
+	        display: flex;
+    	    flex-direction: column;
+    	    align-items: center;
+            gap: 2rem;
         }
     </style>
 </head>
+
 <body>
+    <div class="img_logo">
+        <img src="./assets/imagen/intro.svg">
+    </div>
 
-
-
+    <div class="botones">
+        <div id="home" class="flex-center flex-column">
+            <a class="btn" href="game.html"><img src="./assets/imagen/btn_jugar.svg"></a>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
 </body>
 </html>
